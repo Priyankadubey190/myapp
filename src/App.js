@@ -2,14 +2,27 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const mobileOs = ["Android","Blackberry","iPhone","Windows Phone"];
+  const manufac = ["Samsung","HTC","Micromax","Apple"];
   return (
     <div>
       <div id="add-note" type="text">
-       <div >hello</div> 
-       <div >welcome to masai</div> 
+       <div >Mobile Operating System</div> 
+       <ul>
+         {mobileOs.map((e) => (
+           <li>{e}</li>
+         ))}
+       </ul>
+       <div >Mobile Manufacturers</div> 
+       <ul>
+         {manufac.map((e) => (
+           <li>{e}</li>
+         ))}
+       </ul>
         </div>
     </div>
   );
 }
+
 
 export default App;
