@@ -15,9 +15,10 @@ function App() {
        </ul>
        <div >Mobile Manufacturers</div> 
        <ul>
-         {manufac.map((e) => (
-           <li>{e}</li>
-         ))}
+         <li className="list">Samsung</li>
+         <li className="list">HTC</li>
+         <li className="list">Micromax</li>
+         <li className="cir">Apple</li>
        </ul>
         </div>
     </div>
